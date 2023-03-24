@@ -1,6 +1,5 @@
 package com.syfttny.calmcoast.model
 
-import android.graphics.Bitmap
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -14,5 +13,5 @@ data class Meditation(
     @ColumnInfo(name = "description") val description: String,
     @ColumnInfo(name = "localAudioPath") val localAudioPath: String,
     @ColumnInfo(name = "isDownloaded") val isDownloaded: Boolean = false,
-    @ColumnInfo(name = "image") val image: Bitmap,
+    @ColumnInfo(name = "image") val image: String,
 )
